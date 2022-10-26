@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"_app.jsx -> @/components/layout/canvas":{"id":"_app.jsx -> @/components/layout/canvas","files":["static/chunks/src_components_layout_canvas_jsx.js"]}}
