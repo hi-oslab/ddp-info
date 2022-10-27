@@ -168,13 +168,13 @@ __webpack_async_result__();
 function FooterLogo() {
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-            className: "flex m-8 fixed bottom-0 right-0 w-fit h-fit",
+            className: "flex m-8 fixed bottom-0 bg-white px-4 right-0 w-fit h-fit",
             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
-                src: "/img/footer-logo.svg",
+                src: "/img/ddplogo.png",
                 alt: "footer-logo",
                 fill: "intrinsic",
-                width: 150,
-                height: 500
+                width: 120,
+                height: 60
             })
         })
     });
@@ -217,13 +217,12 @@ function Footer({ children  }) {
 function HeaderLogo() {
     return /*#__PURE__*/ _jsx(_Fragment, {
         children: /*#__PURE__*/ _jsx("div", {
-            className: "flex flex-row items-center justify-center w-20 h-20 bg-black",
+            className: "flex flex-row items-center justify-center w-20 h-20 ",
             children: /*#__PURE__*/ _jsx(Image, {
                 src: "/img/logo.svg",
                 alt: "logo",
                 width: 100,
-                height: 100,
-                className: ""
+                height: 100
             })
         })
     });
@@ -300,24 +299,48 @@ const Page = (props)=>{
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                         type: "button",
                         onClick: ()=>router.reload(),
-                        className: "flex text-white h-full text-center text-black text-3xl hover:underline decoration-wavy",
-                        children: "DDP2022"
+                        className: "flex text-white p-8 h-full text-center text-white text-3xl hover:underline decoration-wavy",
+                        children: "SEOUL DESIGN 2022"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("headerLogo", {})
                 ]
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: "absolute grid justify-between items-center w-screen h-screen px-40",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "flexbg-white",
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_8___default()), {
-                        src: "/img/poster.png",
-                        alt: "Picture of the author",
-                        layout: "intrinsic",
-                        width: 782,
-                        height: 1104
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "absolute grid justify-center items-center w-screen h-screen px-40 ",
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        className: "grid w-full grid-cols-2 grid-rows-1 gap-x-20",
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "w-fit bg-[rgba(0,0,0,0.8)] rounded-xl",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_8___default()), {
+                                    src: "/img/300ppi/mxs.png",
+                                    alt: "MXS",
+                                    width: 864,
+                                    height: 350
+                                })
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                className: "w-fit bg-[rgba(0,0,0,0.8)] rounded-xl",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_8___default()), {
+                                    src: "/img/300ppi/prizm.png",
+                                    alt: "PRIZM",
+                                    width: 864,
+                                    height: 350
+                                })
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                        className: "w-fit place-self-center bg-[rgba(0,0,0,0.8)] rounded-xl",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_8___default()), {
+                            src: "/img/300ppi/osl.png",
+                            alt: "OSL",
+                            width: 864,
+                            height: 350
+                        })
                     })
-                })
+                ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_dom_footer_logo__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {})
         ]

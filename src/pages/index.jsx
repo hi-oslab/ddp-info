@@ -21,21 +21,41 @@ const Page = (props) => {
         <button
           type="button"
           onClick={() => router.reload()}
-          className="flex text-white h-full text-center text-black text-3xl hover:underline decoration-wavy"
+          className="flex text-white p-8 h-full text-center text-white text-3xl hover:underline decoration-wavy"
         >
-          DDP2022
+          SEOUL DESIGN 2022
         </button>
         <headerLogo></headerLogo>
       </Header>
-      <div className="absolute grid justify-between items-center w-screen h-screen px-40">
-        <div className="flexbg-white">
+      <div className="absolute grid justify-center items-center w-screen h-screen px-40 ">
+        {/* <div className="w-fit shadow-2xl">
           <Image
             src="/img/poster.png"
             alt="Picture of the author"
-            layout="intrinsic"
-            width={782}
-            height={1104}
+            width={391}
+            height={552}
           />
+        </div> */}
+        <div className="grid  w-full grid-cols-2 grid-rows-1 gap-x-20">
+          <div className="w-fit bg-[rgba(0,0,0,0.8)] rounded-xl">
+            <Image
+              src="/img/300ppi/mxs.png"
+              alt="MXS"
+              width={864}
+              height={350}
+            />
+          </div>
+          <div className="w-fit bg-[rgba(0,0,0,0.8)] rounded-xl">
+            <Image
+              src="/img/300ppi/prizm.png"
+              alt="PRIZM"
+              width={864}
+              height={350}
+            />
+          </div>
+        </div>
+        <div className="w-fit place-self-center bg-[rgba(0,0,0,0.8)] rounded-xl">
+          <Image src="/img/300ppi/osl.png" alt="OSL" width={864} height={350} />
         </div>
       </div>
       <FooterLogo></FooterLogo>
