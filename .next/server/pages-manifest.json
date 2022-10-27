@@ -3,8 +3,8 @@
   "/_error": "pages/_error.js",
   "/": "pages/index.js",
   "/_document": "pages/_document.js",
-  "/en/404": "pages/en/404.html",
-  "/jp/404": "pages/jp/404.html",
   "/en/500": "pages/en/500.html",
-  "/jp/500": "pages/jp/500.html"
+  "/jp/500": "pages/jp/500.html",
+  "/en/404": "pages/en/404.html",
+  "/jp/404": "pages/jp/404.html"
 }
