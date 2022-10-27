@@ -25,6 +25,7 @@ const Page = (props) => {
         ></button>
         <headerLogo></headerLogo>
       </Header>
+
       <div className="absolute grid justify-center items-center w-screen h-screen px-40 ">
         {/* <div className="w-fit shadow-2xl">
           <Image
@@ -34,6 +35,14 @@ const Page = (props) => {
             height={552}
           />
         </div> */}
+        <div className="w-fit place-self-center bg-[rgba(0,0,0,0.8)] rounded-xl">
+          <Image
+            src="/img/300ppi/osl.png"
+            alt="OSL"
+            width={1300}
+            height={360}
+          />
+        </div>
         <div className="grid  w-full grid-cols-2 grid-rows-1 gap-x-20">
           <div className="w-fit bg-[rgba(0,0,0,0.8)] rounded-xl">
             <Image
@@ -51,9 +60,6 @@ const Page = (props) => {
               height={360}
             />
           </div>
-        </div>
-        <div className="w-fit place-self-center bg-[rgba(0,0,0,0.8)] rounded-xl">
-          <Image src="/img/300ppi/osl.png" alt="OSL" width={864} height={360} />
         </div>
       </div>
       <FooterLogo></FooterLogo>

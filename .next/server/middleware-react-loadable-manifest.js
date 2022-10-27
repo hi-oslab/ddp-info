@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={"_app.jsx -> @/components/layout/canvas":{"id":"_app.jsx -> @/components/layout/canvas","files":["static/chunks/src_components_layout_canvas_jsx.js"]}}
+self.__REACT_LOADABLE_MANIFEST={"_app.jsx -> @/components/layout/canvas":{id:4222,files:["static/chunks/fb7d5399-79cfd94b6314e301.js","static/chunks/59-890c357dbbc9d8d4.js","static/chunks/323.17bb5414c3d172cd.js","static/chunks/222.d13a1aa4f44fa281.js"]}};
