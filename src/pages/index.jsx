@@ -22,9 +22,7 @@ const Page = (props) => {
           type="button"
           onClick={() => router.reload()}
           className="flex text-white p-8 h-full text-center text-white text-3xl hover:underline decoration-wavy"
-        >
-          SEOUL DESIGN 2022
-        </button>
+        ></button>
         <headerLogo></headerLogo>
       </Header>
       <div className="absolute grid justify-center items-center w-screen h-screen px-40 ">

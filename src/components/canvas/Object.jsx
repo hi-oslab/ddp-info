@@ -37,7 +37,7 @@ const Object = ({ route }) => {
   return (
     <>
       <Center>
-        <Float floatIntensity={5} speed={2}>
+        <Float floatIntensity={3} speed={2}>
           <ambientLight intensity={0.5} />
           <Text3D
             font={"/Galmuri9 Regular_Regular.json"}
