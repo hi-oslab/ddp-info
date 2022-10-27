@@ -40,7 +40,7 @@ const Page = (props) => {
               src="/img/300ppi/mxs.png"
               alt="MXS"
               width={864}
-              height={350}
+              height={360}
             />
           </div>
           <div className="w-fit bg-[rgba(0,0,0,0.8)] rounded-xl">
@@ -48,12 +48,12 @@ const Page = (props) => {
               src="/img/300ppi/prizm.png"
               alt="PRIZM"
               width={864}
-              height={350}
+              height={360}
             />
           </div>
         </div>
         <div className="w-fit place-self-center bg-[rgba(0,0,0,0.8)] rounded-xl">
-          <Image src="/img/300ppi/osl.png" alt="OSL" width={864} height={350} />
+          <Image src="/img/300ppi/osl.png" alt="OSL" width={864} height={360} />
         </div>
       </div>
       <FooterLogo></FooterLogo>

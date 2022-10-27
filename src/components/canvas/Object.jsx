@@ -41,9 +41,9 @@ const Object = ({ route }) => {
           <ambientLight intensity={0.5} />
           <Text3D
             font={"/Galmuri9 Regular_Regular.json"}
-            position={[0, 2, 0]}
+            position={[0, 4, 0]}
             bevelEnabled
-            size={1.0}
+            size={0.8}
             receiveShadow
           >
             끌:력
@@ -56,9 +56,9 @@ const Object = ({ route }) => {
           </Text3D>
           <Text3D
             font={"/Galmuri9 Regular_Regular.json"}
-            position={[-2, 1, 0]}
+            position={[-1.8, 3, 0]}
             bevelEnabled
-            size={0.5}
+            size={0.4}
             receiveShadow
           >
             서로가 서로를 이끄는 힘
