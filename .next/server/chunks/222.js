@@ -55,7 +55,8 @@ const LCanvas = ({ children  })=>{
         mode: "concurrent",
         style: {
             position: "absolute",
-            top: 0
+            top: 0,
+            zIndex: 10
         },
         onCreated: (state)=>state.events.connect(dom.current),
         children: [

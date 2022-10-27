@@ -5,121 +5,280 @@ exports.id = 405;
 exports.ids = [405];
 exports.modules = {
 
-/***/ 10:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 879:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ pages),
-  "getStaticProps": () => (/* binding */ getStaticProps)
-});
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: ./node_modules/next/dynamic.js
-var dynamic = __webpack_require__(152);
-// EXTERNAL MODULE: external "@react-three/fiber"
-var fiber_ = __webpack_require__(784);
-;// CONCATENATED MODULE: external "next/router"
-const router_namespaceObject = require("next/router");
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(689);
-// EXTERNAL MODULE: external "@react-three/drei"
-var drei_ = __webpack_require__(165);
-;// CONCATENATED MODULE: ./src/components/canvas/Box.jsx
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(784);
+/* harmony import */ var _react_three_fiber__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_react_three_fiber__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _react_three_drei__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(165);
+/* harmony import */ var _react_three_drei__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var three_src_loaders_TextureLoader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1);
+/* harmony import */ var three__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(949);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([three__WEBPACK_IMPORTED_MODULE_5__]);
+three__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
 
 
-const BoxComponent = ({ route  })=>{
-    const router = (0,router_namespaceObject.useRouter)();
+
+
+
+
+const Object = ({ route  })=>{
+    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_2__.useRouter)();
     // This reference will give us direct access to the THREE.Mesh object
-    const mesh = (0,external_react_.useRef)(null);
+    const mesh = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null);
+    const ambientLight = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+    const directionalLight = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+    const colorMap = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_1__.useLoader)(three_src_loaders_TextureLoader__WEBPACK_IMPORTED_MODULE_6__/* .TextureLoader */ .d, "/img/texturecolor.jpg");
     // Set up state for the hovered and active state
-    const { 0: hovered , 1: setHover  } = (0,external_react_.useState)(false);
+    const { 0: hovered , 1: setHover  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     // Subscribe this component to the render-loop, rotate the mesh every frame
-    (0,fiber_.useFrame)((state, delta)=>mesh.current ? mesh.current.rotation.y = mesh.current.rotation.x += 0.01 : null);
+    // useFrame((state, delta) =>
+    //   mesh.current
+    //     ? (mesh.current.rotation.y = mesh.current.rotation.x += 0.01)
+    //     : null
+    // );
+    (0,_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.useHelper)(ambientLight, three__WEBPACK_IMPORTED_MODULE_5__.ambientLightHelper, "teal");
+    (0,_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.useHelper)(directionalLight, three__WEBPACK_IMPORTED_MODULE_5__.directionalLightHelper, 0.5, "hotpink");
     // Return the view, these are regular Threejs elements expressed in JSX
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(drei_.Center, {
-                rotation: [
-                    -0.5,
-                    -0.25,
-                    0
-                ],
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(drei_.Text3D, {
-                    onPointerOver: ()=>setHover(true),
-                    onPointerOut: ()=>setHover(false),
-                    curveSegments: 32,
-                    bevelEnabled: true,
-                    bevelSize: 0.04,
-                    bevelThickness: 0.1,
-                    height: 0.5,
-                    lineHeight: 0.5,
-                    letterSpacing: -0.06,
-                    size: 1.5,
-                    font: "/KoddiUD OnGothic Bold_Regular.json",
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.Center, {
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.Float, {
+                    floatIntensity: 5,
+                    speed: 2,
                     children: [
-                        `끌:력 \n 서로가 서로를 이끄는 힘`,
-                        /*#__PURE__*/ jsx_runtime_.jsx("meshNormalMaterial", {})
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("ambientLight", {
+                            intensity: 0.5
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.Text3D, {
+                            font: "/Galmuri9 Regular_Regular.json",
+                            position: [
+                                0,
+                                2,
+                                0
+                            ],
+                            bevelEnabled: true,
+                            size: 1.0,
+                            receiveShadow: true,
+                            children: [
+                                "끌:력",
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meshPhysicalMaterial", {
+                                    attach: "material",
+                                    color: "white",
+                                    roughness: 0.1,
+                                    metalness: 0.9
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.Text3D, {
+                            font: "/Galmuri9 Regular_Regular.json",
+                            position: [
+                                -2,
+                                1,
+                                0
+                            ],
+                            bevelEnabled: true,
+                            size: 0.5,
+                            receiveShadow: true,
+                            children: [
+                                "서로가 서로를 이끄는 힘",
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meshPhysicalMaterial", {
+                                    attach: "material",
+                                    color: "white",
+                                    roughness: 0.1,
+                                    metalness: 0.9
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("spotLight", {
+                            position: [
+                                50,
+                                50,
+                                -30
+                            ],
+                            castShadow: true
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("pointLight", {
+                            position: [
+                                -10,
+                                -10,
+                                -10
+                            ],
+                            color: "blue",
+                            intensity: 3
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("pointLight", {
+                            position: [
+                                0,
+                                -5,
+                                5
+                            ],
+                            intensity: 0.5
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("directionalLight", {
+                            position: [
+                                0,
+                                -5,
+                                0
+                            ],
+                            color: "red",
+                            intensity: 3
+                        })
                     ]
                 })
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("directionalLight", {
-                position: [
-                    5,
-                    5,
-                    5
-                ]
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("ambientLight", {})
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.Environment, {
+                preset: "warehouse"
+            })
         ]
     });
 };
-/* harmony default export */ const Box = (BoxComponent);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Object);
 
-;// CONCATENATED MODULE: ./src/components/dom/header.jsx
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
-function Header({ children  }) {
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "border-b-2 border-black fixed items-center top-0 w-full h-20",
-            children: children
+/***/ }),
+
+/***/ 473:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ FooterLogo)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function FooterLogo() {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "flex m-8 fixed bottom-0 right-0 w-fit h-fit",
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                src: "/img/footer-logo.svg",
+                alt: "footer-logo",
+                fill: "intrinsic",
+                width: 150,
+                height: 500
+            })
         })
     });
 };
 
-;// CONCATENATED MODULE: ./src/components/dom/footer.jsx
+
+/***/ }),
+
+/***/ 125:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* unused harmony export default */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 //make footer component and export it
 
 function Footer({ children  }) {
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+    return /*#__PURE__*/ _jsx(_Fragment, {
+        children: /*#__PURE__*/ _jsx("div", {
             className: " fixed bottom-0 w-full h-20 flex items-center ",
             children: children
         })
     });
 };
 
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(675);
-;// CONCATENATED MODULE: ./src/components/dom/footer-logo.jsx
+
+/***/ }),
+
+/***/ 804:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* unused harmony export default */
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);
 
 
-function FooterLogo() {
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "flex absolute self-center right-2 w-36 h-14"
+//make header logo component and export it
+function HeaderLogo() {
+    return /*#__PURE__*/ _jsx(_Fragment, {
+        children: /*#__PURE__*/ _jsx("div", {
+            className: "flex flex-row items-center justify-center w-20 h-20 bg-black",
+            children: /*#__PURE__*/ _jsx(Image, {
+                src: "/img/logo.svg",
+                alt: "logo",
+                width: 100,
+                height: 100,
+                className: ""
+            })
         })
     });
 };
 
-;// CONCATENATED MODULE: ./src/pages/index.jsx
+
+/***/ }),
+
+/***/ 94:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ Header)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function Header({ children  }) {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            className: "fixed items-center top-0 w-full h-20",
+            children: children
+        })
+    });
+};
+
+
+/***/ }),
+
+/***/ 325:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(152);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_canvas_Object__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(879);
+/* harmony import */ var _components_dom_header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(94);
+/* harmony import */ var _components_dom_header_logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(804);
+/* harmony import */ var _components_dom_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(125);
+/* harmony import */ var _components_dom_footer_logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(473);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_8__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_canvas_Object__WEBPACK_IMPORTED_MODULE_2__]);
+_components_canvas_Object__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
 
 
 
@@ -133,29 +292,43 @@ function FooterLogo() {
 // https://github.com/pmndrs/react-three-next/issues/49
 // dom components goes here
 const Page = (props)=>{
-    const router = (0,router_namespaceObject.useRouter)();
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_7__.useRouter)();
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(Header, {
-                children: /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                    type: "button",
-                    onClick: ()=>router.reload(),
-                    className: "flex h-full text-center text-black text-3xl hover:underline decoration-wavy",
-                    children: "끌:력 서로가 서로를 이끄는 힘"
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_dom_header__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                        type: "button",
+                        onClick: ()=>router.reload(),
+                        className: "flex text-white h-full text-center text-black text-3xl hover:underline decoration-wavy",
+                        children: "DDP2022"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("headerLogo", {})
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "absolute grid justify-between items-center w-screen h-screen px-40",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "flexbg-white",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_8___default()), {
+                        src: "/img/poster.png",
+                        alt: "Picture of the author",
+                        layout: "intrinsic",
+                        width: 782,
+                        height: 1104
+                    })
                 })
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx(Footer, {
-                children: /*#__PURE__*/ jsx_runtime_.jsx(FooterLogo, {})
-            })
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_dom_footer_logo__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .Z, {})
         ]
     });
 };
 // canvas components goes here
 // It will receive same props as Page component (from getStaticProps, etc.)
-Page.r3f = (props)=>/*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: /*#__PURE__*/ jsx_runtime_.jsx(Box, {})
+Page.r3f = (props)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_canvas_Object__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {})
     });
-/* harmony default export */ const pages = (Page);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Page);
 async function getStaticProps() {
     return {
         props: {
@@ -164,6 +337,8 @@ async function getStaticProps() {
     };
 }
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
@@ -230,6 +405,13 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
+/***/ 853:
+/***/ ((module) => {
+
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ 689:
 /***/ ((module) => {
 
@@ -242,6 +424,13 @@ module.exports = require("react");
 
 module.exports = require("react/jsx-runtime");
 
+/***/ }),
+
+/***/ 949:
+/***/ ((module) => {
+
+module.exports = import("three");;
+
 /***/ })
 
 };
@@ -251,7 +440,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [152,675], () => (__webpack_exec__(10)));
+var __webpack_exports__ = __webpack_require__.X(0, [152,520], () => (__webpack_exec__(325)));
 module.exports = __webpack_exports__;
 
 })();
