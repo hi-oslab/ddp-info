@@ -91,8 +91,8 @@ const Object = ({ route  })=>{
                                 0
                             ],
                             bevelEnabled: true,
+                            bevelSegments: 0.1,
                             size: 0.4,
-                            receiveShadow: true,
                             children: [
                                 "서로가 서로를 이끄는 힘",
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meshPhysicalMaterial", {

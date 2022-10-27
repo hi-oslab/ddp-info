@@ -58,8 +58,8 @@ const Object = ({ route }) => {
             font={"/Galmuri9 Regular_Regular.json"}
             position={[-1.8, 3, 0]}
             bevelEnabled
+            bevelSegments={0.1}
             size={0.4}
-            receiveShadow
           >
             서로가 서로를 이끄는 힘
             <meshPhysicalMaterial
